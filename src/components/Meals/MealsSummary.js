@@ -2,18 +2,12 @@ import classes from './MealsSummary.module.css';
 
 const MealsSummary = () => {
   return (
-    <section className={classes.summary}>
-      <h2>Delicious Food, Delivered To You</h2>
-      <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
-      </p>
-      <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
-      </p>
-    </section>
-  );
+		<section className={classes.summary}>
+			<h2>歡樂美食盡在咫尺</h2>
+			<p>選擇您喜愛的美食，並且放心，我們會為您準備好的。</p>
+			<p>所有餐點均為美食，並且為您準備好，請放心。</p>
+		</section>
+	);
 };
 
 export default MealsSummary;
