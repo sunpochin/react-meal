@@ -5,7 +5,6 @@ const MealsSummary = () => {
 		<section className={classes.summary}>
 			<h2>歡樂美食盡在咫尺</h2>
 			<p>選擇您喜愛的美食，並且放心，我們會為您準備好的。</p>
-			<p>所有餐點均為美食，並且為您準備好，請放心。</p>
 		</section>
 	);
 };
