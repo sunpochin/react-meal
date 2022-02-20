@@ -36,29 +36,30 @@ const AvailableMeals = () => {
 	const [httpError, setHttpError] = useState(null);
 
 	useEffect(() => {
-		const fetchMeals = async () => {
-			const response = await fetch(
-				'https://react-http-7bc61-default-rtdb.asia-southeast1.firebasedatabase.app/Meals.json'
-			);
-			const responseData = await response.json();
-			console.log('responseData: ', responseData);
+		// const fetchMeals = async () => {
+		// 	const response = await fetch(
+		// 		'https://xxx.asia-southeast1.firebasedatabase.app/Meals.json'
+		// 	);
+		// 	const responseData = await response.json();
+		// 	console.log('responseData: ', responseData);
 
-			// if (!response.ok) {
-			// 	throw new Error('Something went wrong!');
-			// }
+		// 	// if (!response.ok) {
+		// 	// 	throw new Error('Something went wrong!');
+		// 	// }
 
-			const loadedMeals = [];
-			for (const key in responseData) {
-				loadedMeals.push({
-					id: key,
-					name: responseData[key].name,
-					description: responseData[key].description,
-					price: responseData[key].price,
-				});
-			}
-			setMeals(loadedMeals);
-			setIsLoading(false);
-		};
+		// 	const loadedMeals = [];
+		// 	for (const key in responseData) {
+		// 		loadedMeals.push({
+		// 			id: key,
+		// 			name: responseData[key].name,
+		// 			description: responseData[key].description,
+		// 			price: responseData[key].price,
+		// 		});
+		// 	}
+		// 	setMeals(loadedMeals);
+		// 	setIsLoading(false);
+		// };
+		//
 
 		// try {
 		//   fetchMeals();
@@ -66,10 +67,12 @@ const AvailableMeals = () => {
 		//   setIsLoading(false);
 		//   setHttpError(error.message);
 		// }
-		fetchMeals().catch((error) => {
-			setIsLoading(false);
-			setHttpError(error.message);
-		});
+		//
+		// fetchMeals().catch((error) => {
+		// 	setIsLoading(false);
+		// 	setHttpError(error.message);
+		// });
+		setIsLoading(false);
 	}, []);
 
 	if (isLoading) {
